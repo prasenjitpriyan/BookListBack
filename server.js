@@ -9,7 +9,7 @@ const port = process.env.PORT || 3001
 const url = process.env.URL
 
 let corsOptions = {
-    origin: ['http://localhost:5173']
+    origin: ['https://booklistfront.onrender.com']
 };
 
 app.use(express.json());

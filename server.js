@@ -9,7 +9,10 @@ const port = process.env.PORT || 3001
 const url = process.env.URL
 
 let corsOptions = {
-    origin: ['https://booklistfront.onrender.com']
+    origin: ['https://booklistfront.onrender.com'],
+    "methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
+  "preflightContinue": false,
+  "optionsSuccessStatus": 204
 };
 
 app.use(express.json());
